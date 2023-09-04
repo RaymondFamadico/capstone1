@@ -89,3 +89,10 @@ body {
   width: 150px; /* Set the desired width */
   height: 100px; /* Set the desired height */
 }
+
+.quote {
+	font-family: 'Luckiest Guy', cursive;
+	font-size: 1rem;
+	text-align: center;
+	color: black;
+}
