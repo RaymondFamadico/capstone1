@@ -1,89 +1,231 @@
 <!DOCTYPE html>
-<html>
-<!-- Zuiit Project Capstone 1 -->
-<!-- Developer Name: Raymond Famadico -->
-<!-- Created Date: Sep 1, 2023 -->
-<!-- Instructor : Hilary Almonte & Andrei Von Amorado -->
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>My Portfolio (Full Stack Web Developer)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Add Bootstrap CSS link -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-	<!-- 1.0 Bootstrap Link-->
-	<!-- Inject dependency for bootstrap utilities -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- 2.0 Adding Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans&family=Roboto+Flex:opsz,wght@8..144,500;8..144,800&family=Roboto+Slab:wght@500;700&display=swap" rel="stylesheet">
 
-	<!-- 2.0 Adding Google Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Flex:opsz,wght@8..144,500;8..144,800&family=Roboto+Slab:wght@500;700&display=swap" rel="stylesheet">
-
-	<!-- adding external CSS -->
+    <!-- adding external CSS -->
     <link rel="stylesheet" href="./index.css">
 
+
 </head>
+<body class="bg-dark text-white">
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#landing">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#developer-info">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#tools">Tools</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<body class>
-	<!-- 3.0 Nav Bar -->
-		<div class="bg-dark gap-5 p-0">
-		
-			<nav id="nav" class="navbar navbar-expand-lg navbar-dark text-white ">
-			 
-			  <a class="navbar-brand" href="#nav">My Portfolio</a>
+    <!-- Landing Section -->
+    <section id="landing" class="container-fluid bg-primary text-white py-5 background">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src=".\images\mypic.jpg" width="200" class="img-fluid rounded-circle" alt="Profile Picture">
+                </div>
+                <div id="info" class="col-md-6">
 
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			    <span class="navbar-toggler-icon"></span>
-			  </button>
+                    <h2 id="name" class="mt-5"> Hi I am Raymond !</h2>
+                    <h2 id="title"  class="mt-5" >(Full Stack Developer)</h3>
+            </div>
+        </div>
+    </section>
 
-			  <div class="collapse navbar-collapse" id="navbarNav">
-			    <ul class="navbar-nav ml-auto">
-			      <li class="nav-item active">
-			        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-			      </li>
-			      <li class="nav-item">
-			        <a  class="nav-link" href="#">Projects</a>
-			      </li>
-			      <li class="nav-item">
-			        <a  class="nav-link" href="#">Tools</a>
-			      </li>
-			      <li class="nav-item">
-			        <a  class="nav-link" href="#">Contacts</a>
-			      </li>
-			    </ul>
-			  </div>
-			</nav>
-		</div>
 
-	 <!-- Landing Section Highlights Profiles -->
+    <!-- Developer Information -->
+    <section id="developer-info" class="container py-5">
+        <h2 id="label-AboutMe">About Me</h2>
+        <p id="about_me">Seasoned experience in programming and have honed my skills over many years of practice. I am familiar with a range of programming languages and frameworks, enabling me to solve complex problems and develop efficient and effective solutions. My experience has taught me to anticipate potential challenges and find creative solutions to ensure successful project outcomes. I am passionate about programming and am constantly seeking to learn and stay up-to-date with the latest developments in the field.</p>
+    </section>
 
-        <section class="background-section">
-            <div class="container py-5">
-                <div class="row">
-                    <div id="info" class="col-sm-12 col-md-12 col-lg-6 order-2 mx-auto p-5">
-                        <h2 id="name">Raymond Famadico</h2>
+    <!-- Projects Section  -->
+    <section id="projects">
+        <div class="text-light min-vh-10 p-0">
+        <h2 id="label-Projects" class="mb-1 mt-1 text-center">Projects</h2>
 
-                        <h3 id="title">(Full Stack Developer)</h3>
+             <!-- Project Database Past Programmming -->
+            <div class="d-lg-flex justify-content-center p-md-2" width="50%">
 
-                        <p id="profile-description"> As a Full Stack Developer with extensive experience in Oracle development, I am proficient in utilizing Oracle forms, reports, and database programming to create robust and efficient applications. My expertise allows me to seamlessly integrate front-end and back-end development, ensuring optimal performance and functionality.I am able to deliver high-quality solutions that meet clients' unique needs and requirements.
-                        </p>
+                <!-- Oracle Forms and Reports -->
+                <div class="card bg-dark col-xl-4 mb-5 mb-xl-0">
+                  <img width="30" src="./images/oracle.png" width="100" class="card-img-top overflow-hidden img-fluid   " alt="HTML image">
+                  <div class="card-body">
+                    <h5 class="card-title mt-3">Oracle Forms and Reports</h5>
+                    <p class="mt-2 mb-1 text-left"> Build Corporate Application using Oracle development tools</p>
+                  </div>
+                </div>
+                <!-- End of HTML -->
+
+                <!-- CA Automation -->
+                <div class="card bg-dark col-xl-4 mb-5 mb-xl-0" >
+                  <img width="30" src="./images/ca_automation.png" class="card-img-top overflow-hidden img-fluid" alt="CA_Automation image">
+                  <div class="card-body">
+                    <h5 class="card-title mt-3">CA Automation</h5>
+                    <p class="mt-2 mb-1 text-left"> Build Automated Batch Process using CA technologies</p>
+                  </div>
+                </div> 
+
+                <!-- Oracle PLSQL -->
+                <div class="card bg-dark col-xl-4 mb-5 mb-xl-0" >
+                  <img width="30" src="./images/html_css_bootstrap.png" class="card-img-top overflow-hidden img-fluid" alt="PLSQL image">
+                  <div class="card-body">
+                    <h5 class="card-title mt-3">HTML CSS & Bootstrap</h5>
+                    <p class="mt-2 mb-1 text-left"> Build Responsive HTML with CSS and Bootstrap </p>
+                  </div>
+                </div>
+                <!-- End of Bootstrap -->
+
+               
+            
+
+            </div>
+
+               
+        </div>
+    </section>
+
+
+
+    <!-- Tools Section -->
+    <section id="tools" class="container py-5 text-center">
+        <h2 id="label-tools">Tools</h2>
+
+
+       <div id="core-tools" class="d-flex flex-row">
+       
+           <div id="FrontEnd" >
+                <h3 class="mt-3 text-center d-flex-column">Front End</h3>
+               <img width="75" src="images/logo-html5.png" class="overflow-hidden img-fluid" />
+               <img width="75" src="images/logo-css3.png" class="overflow-hidden img-fluid " />
+               <div class="d-flex">
+               <img width="75" src="images/logo-javascript.png" class="overflow-hidden img-fluid" />
+               <img width="75" src="images/logo-bootstrap.png" class="overflow-hidden img-fluid" />
+            </div>
+
+            <div id="MERN" >
+                <h3 class="mt-3 text-center">MERN</h3>
+               <img width="75" src="images/logo-mongodb.png" class="overflow-hidden img-fluid" />
+               <img width="75" src="images/logo-nodejs.png" class="overflow-hidden img-fluid " />
+               <div class="d-flex">
+               <img width="75" src="images/logo-expressjs.png" class="overflow-hidden img-fluid" />
+               <img width="75" src="images/logo-react.png" class="overflow-hidden img-fluid" />
+            </div>
+
+             <div id="Tools" >
+                <h3 class="mt-3 text-center">MERN</h3>
+               <img width="75" src="images/logo-git.png" class="overflow-hidden img-fluid" />
+               <img width="75" src="images/logo-sublime-text-3.png" class="overflow-hidden img-fluid " />
+               <div class="d-flex">
+               <img width="75" src="images/logo-postman.png" class="overflow-hidden img-fluid" />
+               <img width="75" src="images/logo-gitlab-ci-cd.png" class="overflow-hidden img-fluid" />
+            </div>
+
+
+       </div>
+   
+     
+
+
+
+
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="container-fluid bg-white  py-5 text-dark">
+        <div class="container">
+            <h2 id="label-contact">Contact Me</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                Send Email
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title text-dark" id="exampleModalLabel">Thank you for contacting us!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span class="text-dark">&times;</span>
+                        </button>
+                      </div>
+
+                      <div class="modal-body">
+                        <p class="text-dark">Message Succesfully Sent</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        
+                      </div>
                     </div>
-                    <div class="col-sm-12 col-md-12 col-lg-6 order-1 mx-auto p-5">
-                        <img src="./images/mypic.jpg" width="200" class="img-fluid mt-5 mt-md-0 rounded-circle float-right mx-auto">
-                    </div>
+                  </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer class="bg-primary text-light text-center py-3 p-0 mb-1 min-vh-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Contact Us</h4>
+                    <p>Email: raymondfrys24@gmail.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Follow Us</h4>
+                    <a href="#" class="text-light mx-2"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#" class="text-light mx-2"><i class="fab fa-linkedin fa-2x"></i></a>
+                </div>
+                <div class="col-md-4">
+                    <h4>Ayala</h4>
+                    <p>Makati, Philippines 4103</p>
                 </div>
             </div>
-        </section>
+            <div>
+            	<p>&copy; 2023 Zuitt B313 Capstone All rights reserved.</p>
+            </div>
+        </div>
+        
+    </footer>
 
-
-        <!--Projects Sections  -->
-
-
-	
-
-
-	<!-- 1.1 Bootstrap Scripts -->
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-
+    <!-- Add Bootstrap JS and jQuery (optional) links if needed -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
